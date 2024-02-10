@@ -1,4 +1,10 @@
+"use client"
+
+import { useSession } from "@/hooks/query/useSession"
+
 export default function Home() {
+  const { user, isLoading, error } = useSession()
+  if (user) console.log(user.name)
   return (
     <>
       <div className="flex flex-1 flex-col items-center justify-center gap-4 bg-gradient-to-br from-pink-400 from-20% via-cyan-400 via-50% to-purple-800 to-70%">
