@@ -1,69 +1,82 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+ 
+body,html,:root {
+  @apply h-full;
+} 
 
-html,
-body,
-:root {
-  height: 100%;
+body {
+  @apply flex flex-col;
 }
 
 @layer base {
   :root {
-    --background: 1 1% 98%;
-    --foreground: 218 70% 13%;
-    --primary: 236.57 69% 59.22%;
-    --primary-foreground: 0 0% 99%;
-    --secondary: 240 4.8% 95.9%;
-    --secondary-foreground: 240 5.9% 10%;
-    --card: 0 3% 99%;
-    --card-foreground: 218 70% 13%;
-    --accent: 10 4% 92%;
-    --accent-foreground: 218 70% 13%;
-    --muted: 222.67 25.4% 13.9%;
-    --muted-foreground: 227 13% 57%;
+    --background: 0 0% 100%;
+    --foreground: 222.2 84% 4.9%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 222.2 84% 4.9%;
+ 
     --popover: 0 0% 100%;
-    --popover-foreground: 0 0% 1%;
-    --destructive: 348 85% 54%;
-    --destructive-foreground: 0 0% 98%;
-    --border: 230 14% 91%;
-    --input: 230 14% 91%;
-    --ring: 236.57 69% 59.22%;
-    --radius: 0.75rem;
+    --popover-foreground: 222.2 84% 4.9%;
+ 
+    --primary: 222.2 47.4% 11.2%;
+    --primary-foreground: 210 40% 98%;
+ 
+    --secondary: 210 40% 96.1%;
+    --secondary-foreground: 222.2 47.4% 11.2%;
+ 
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+ 
+    --accent: 210 40% 96.1%;
+    --accent-foreground: 222.2 47.4% 11.2%;
+ 
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 222.2 84% 4.9%;
+ 
+    --radius: 0.5rem;
   }
 
   .dark {
-    --background: 222.35 30.03% 10.08%;
-    --foreground: 224.52 12.76% 85.35%;
-    --primary: 236.57 69% 59.22%;
-    --primary-foreground: 0 0% 99%;
-    --secondary: 222.5 30.6% 14.97%;
-    --secondary-foreground: 0 0% 98%;
-    --card: 222.5 30.6% 11.97%;
-    --card-foreground: 222.86 20% 93.14%;
-    --accent: 222.5 30.6% 15.97%;
-    --accent-foreground: 222.86 20% 93.14%;
-    --popover: 222.5 30.6% 11.97%;
-    --popover-foreground: 222.86 20% 93.14%;
-    --muted: 222.67 25.4% 13.9%;
-    --muted-foreground: 227 13% 57%;
-    --destructive: 360 65% 54%;
-    --destructive-foreground: 0 0% 98%;
-    --border: 226.15 30.84% 18.53%;
-    --input: 226.15 30.84% 25.53%;
-    --ring: 236.57 69% 59.22%;
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
+ 
+    --card: 222.2 84% 4.9%;
+    --card-foreground: 210 40% 98%;
+ 
+    --popover: 222.2 84% 4.9%;
+    --popover-foreground: 210 40% 98%;
+ 
+    --primary: 210 40% 98%;
+    --primary-foreground: 222.2 47.4% 11.2%;
+ 
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 40% 98%;
+ 
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+ 
+    --accent: 217.2 32.6% 17.5%;
+    --accent-foreground: 210 40% 98%;
+ 
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+ 
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 212.7 26.8% 83.9%;
   }
-
-  body {
-    @apply flex flex-col bg-background text-foreground;
-  }
-
-  input[type="checkbox"] {
-    -webkit-appearance: none !important;
-    -moz-appearance: none !important;
-    box-shadow: none !important;
-    appearance: none !important;
-    @apply relative inline-block h-[1rem] w-[1rem] appearance-none rounded border-2 border-border bg-transparent text-primary;
+}
+ 
+@layer base {
+  * {
+    @apply border-border;
   }
 
   input[type="checkbox"]:checked {
