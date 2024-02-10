@@ -1,29 +1,21 @@
-import Image from "next/image"
-import { Icons } from "@/components/icons"
-import { ThemeToggle } from "@/components/ui/themetoggle"
-
 export default function Home() {
   return (
     <>
-      <header className="flex items-center justify-center bg-background px-4 py-2">
-        <p className="">header</p>
-      </header>
-      <main className="mx-auto flex flex-1 items-center justify-center">
-        <p className="text-accent-foreground">main</p>
-      </main>
-      <footer className="flex justify-between bg-background px-4 py-2">
-        <div className="z-50 flex size-6 items-center justify-center rounded-full bg-gray-800 p-3 font-mono text-xs text-white">
-          <div className="block sm:hidden">xs</div>
-          <div className="hidden sm:block md:hidden lg:hidden xl:hidden 2xl:hidden">sm</div>
-          <div className="hidden md:block lg:hidden xl:hidden 2xl:hidden">md</div>
-          <div className="hidden lg:block xl:hidden 2xl:hidden">lg</div>
-          <div className="hidden xl:block 2xl:hidden">xl</div>
-          <div className="hidden 2xl:block">2xl</div>
-        </div>
-        <Icons.Attachment />
+      <div className="flex flex-1 flex-col items-center justify-center gap-4 bg-gradient-to-br from-pink-400 from-20% via-cyan-400 via-50% to-purple-800 to-70%">
+        <h2 className="text-6xl font-medium">We are still building 🧑🏻‍🏭</h2>
 
-        <ThemeToggle />
-      </footer>
+        <a
+          href="http://152.53.12.218/v1/auth/github"
+          className="rounded-md bg-primary px-4 py-3 font-medium text-primary-foreground transition-all duration-500 hover:animate-bounce"
+        >
+          Log in with GitHub
+        </a>
+
+        <a href="/dashboard/profile" className="mt-2 font-medium underline">
+          {" "}
+          Go to the Dashboard{" "}
+        </a>
+      </div>
     </>
   )
 }
