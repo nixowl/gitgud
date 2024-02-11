@@ -24,15 +24,10 @@ export function GithubAuth() {
     >
       Log in with GitHub
       <div
-        className="-z-1 absolute left-0 top-0
+        className="z-1 absolute left-0 top-0
        h-full w-full
-       rounded-lg border-2 border-violet-200/40
-      bg-gradient-to-b
-      from-purple-600/10 from-10% via-transparent via-70%
-       to-purple-600/10
-       backdrop-blur-md
-        hover:from-purple-500/20 hover:via-transparent hover:to-purple-500/20
-        hover:border-violet-200/50"
+       rounded-lg border-[1px] border-purple-500/40 bg-gradient-to-b from-purple-600/10 from-10% via-transparent via-70% to-purple-600/10 backdrop-blur-md hover:border-violet-400/50 hover:from-purple-500/20 hover:via-transparent
+        hover:to-purple-500/20"
       ></div>
     </a>
   )
