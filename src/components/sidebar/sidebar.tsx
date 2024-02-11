@@ -6,15 +6,15 @@ import { cn } from "@/lib/utils"
 import { sidebarPaths } from "."
 import { Icons } from "../icons"
 import { Button, buttonVariants } from "../ui/button"
-import { ThemeToggle } from "../ui/themetoggle"
+import { ThemeToggle } from "../ui/theme-toggle"
 
 type SidebarProps = {
   sidebarWidth: number
 }
 
 export function Sidebar({ sidebarWidth }: SidebarProps) {
-  console.log("sidebarWidth in Sidebar ", sidebarWidth)
   const pathname = usePathname()
+  console.log("pathname in Sidebar ", pathname)
   return (
     <aside className="hidden w-full flex-col items-center justify-start shadow-sm lg:flex">
       <article className="flex h-14 items-center justify-center">
@@ -35,7 +35,7 @@ export function Sidebar({ sidebarWidth }: SidebarProps) {
             href={path}
             className={buttonVariants({
               size: "sm",
-              variant: "secondary",
+              variant: pathname === path ? "secondary" : "ghost",
               class: sidebarWidth > 140 ? "w-full justify-start font-medium" : "h-10 w-10 p-0",
             })}
           >

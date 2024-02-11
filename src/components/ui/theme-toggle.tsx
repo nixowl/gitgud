@@ -12,12 +12,7 @@ export function ThemeToggle() {
   }
 
   return (
-    <Button
-      onClick={toggleTheme}
-      variant="ghost"
-      size="icon"
-      className="bg-transparent hover:bg-transparent hover:text-accent"
-    >
+    <Button onClick={toggleTheme} variant="ghost" size="icon">
       {theme === "dark" ? <Icons.Sun className="size-5" /> : <Icons.Moon className="size-5" />}
     </Button>
   )

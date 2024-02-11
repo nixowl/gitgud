@@ -5,7 +5,7 @@ export const sidebarPaths = [
 	{
 		title: "Profile",
 		Icon: Icons.User,
-		path: "/dashboard/profile"
+		path: "/profile"
 	},
 	{
 		title: "Notes",
