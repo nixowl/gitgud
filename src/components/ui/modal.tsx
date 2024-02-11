@@ -12,7 +12,7 @@ type ModalProps = {
   isOpen: boolean
 }
 
-const Modal = ({ className, children, onClose, isOpen }: ModalProps) => {
+export const Modal = ({ className, children, onClose, isOpen }: ModalProps) => {
   const ref = useRef<HTMLDivElement>(null)
   useClickOutside(ref, onClose)
 
@@ -40,4 +40,3 @@ const Modal = ({ className, children, onClose, isOpen }: ModalProps) => {
   )
 }
 
-export default Modal
