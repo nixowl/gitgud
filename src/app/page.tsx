@@ -14,7 +14,7 @@ export default function Home() {
         <GithubAuth />
         {authToken && <TempSession authToken={authToken} />}
 
-        <a href="/dashboard/profile" className="mt-2 font-medium underline">
+        <a href="/profile" className="mt-2 font-medium underline">
           {" "}
           Go to the Dashboard{" "}
         </a>
