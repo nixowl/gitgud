@@ -1,11 +1,11 @@
-import { API } from "@/lib/utils"
+import { API, authToken } from "@/lib/utils"
 import { UserRecord } from "@/types/user"
 import { useQuery } from "@tanstack/react-query"
 
 async function fetchUser() {
   const res = await API.get<UserRecord>("/v1/users", {
     headers: {
-      Authorization: "Bearer X67XHIJFQXBUCMKVESPWFMR7WI",
+      Authorization: `Bearer ${authToken}`,
     },
   })
   return res.data
