@@ -1,7 +1,7 @@
 "use client"
 
+import { Icons } from "@/components/icons"
 import { Button } from "@/components/ui/button"
-import { Moon, Sun } from "lucide-react"
 import { useTheme } from "next-themes"
 
 export function ThemeToggle() {
@@ -18,7 +18,7 @@ export function ThemeToggle() {
       size="icon"
       className="bg-transparent hover:bg-transparent hover:text-accent"
     >
-      {theme === "dark" ? <Sun className="h-5 w-5" /> : <Moon className="h-5 w-5" />}
+      {theme === "dark" ? <Icons.Sun className="size-5" /> : <Icons.Moon className="size-5" />}
     </Button>
   )
 }
