@@ -10,7 +10,3 @@ export const API = axios.create({
   baseURL: "http://152.53.12.218",
 })
 
-export const authToken = document.cookie
-  .split("; ")
-  .find((cookie) => cookie.startsWith("auth-token="))
-  ?.split("=")[1]
