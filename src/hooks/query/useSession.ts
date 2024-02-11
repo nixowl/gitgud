@@ -1,5 +1,5 @@
 import { API } from "@/lib/utils"
-import { UserRecord } from "@/types/user"
+import { type UserRecord } from "@/types/user"
 import { useQuery } from "@tanstack/react-query"
 
 async function fetchUser(authToken: string) {

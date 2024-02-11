@@ -4,15 +4,16 @@ import { usePathname } from "next/navigation"
 import { cn } from "@/lib/utils"
 
 import { sidebarPaths } from "."
+import { Icons } from "../icons"
 import { Button, buttonVariants } from "../ui/button"
 import { ThemeToggle } from "../ui/themetoggle"
-import { Icons } from "../icons"
 
 type SidebarProps = {
   sidebarWidth: number
 }
 
 export function Sidebar({ sidebarWidth }: SidebarProps) {
+  console.log("sidebarWidth in Sidebar ", sidebarWidth)
   const pathname = usePathname()
   return (
     <aside className="hidden w-full flex-col items-center justify-start shadow-sm lg:flex">
@@ -34,7 +35,7 @@ export function Sidebar({ sidebarWidth }: SidebarProps) {
             href={path}
             className={buttonVariants({
               size: "sm",
-              variant: pathname === path ? "secondary" : "ghost",
+              variant: "secondary",
               class: sidebarWidth > 140 ? "w-full justify-start font-medium" : "h-10 w-10 p-0",
             })}
           >
