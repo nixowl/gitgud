@@ -1,8 +1,8 @@
-import { API, authToken } from "@/lib/utils"
+import { API } from "@/lib/utils"
 import { UserRecord } from "@/types/user"
 import { useQuery } from "@tanstack/react-query"
 
-async function fetchUser() {
+async function fetchUser(authToken: string) {
   const res = await API.get<UserRecord>("/v1/users", {
     headers: {
       Authorization: `Bearer ${authToken}`,
@@ -11,16 +11,17 @@ async function fetchUser() {
   return res.data
 }
 
-export function useSession() {
-  const { data, isLoading, error, isError } = useQuery({
+export function useSession(authToken: string) {
+  const { data, isLoading, error, isError, isFetched } = useQuery({
     queryKey: ["session"],
-    queryFn: fetchUser,
+    queryFn: () => fetchUser(authToken),
   })
 
   return {
     user: data?.user,
-    isLoading,
-    error,
+    isUserLoading: isLoading,
+    userError: error,
     isError,
+    isFetched,
   }
 }
