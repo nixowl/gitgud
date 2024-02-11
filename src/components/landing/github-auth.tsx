@@ -4,6 +4,8 @@ import { useEffect } from "react"
 import { useRouter, useSearchParams } from "next/navigation"
 import { useSession } from "@/hooks/query/useSession"
 
+// rounded-md bg-primary px-4 py-3 font-medium text-primary-foreground transition-all duration-500 hover:animate-bounce
+
 export function GithubAuth() {
   const router = useRouter()
   const searchParams = useSearchParams()
@@ -22,9 +24,20 @@ export function GithubAuth() {
   return (
     <a
       href="http://152.53.12.218/v1/auth/github"
-      className="rounded-md bg-primary px-4 py-3 font-medium text-primary-foreground transition-all duration-500 hover:animate-bounce"
+      className="before z-2 relative block w-max rounded-lg bg-clip-padding px-4 py-2 text-base font-medium leading-5 text-inherit no-underline backdrop-blur-md backdrop-filter before:absolute"
     >
       Log in with GitHub
+      <div
+        className="-z-1 absolute left-0 top-0
+       h-full w-full
+       rounded-lg border-2 border-violet-200/40
+      bg-gradient-to-b
+      from-purple-600/10 from-10% via-transparent via-70%
+       to-purple-600/10
+       backdrop-blur-md
+        hover:from-purple-500/20 hover:via-transparent hover:to-purple-500/20
+        hover:border-violet-200/50"
+      ></div>
     </a>
   )
 }
