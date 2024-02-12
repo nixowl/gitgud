@@ -5,7 +5,7 @@ import { Icons } from "@/components/icons"
 import { Button } from "@/components/ui/button"
 import { Modal } from "@/components/ui/modal"
 import { Skeleton } from "@/components/ui/skeleton"
-import { useIssueModal } from "@/hooks/context/use-issue-modal"
+import { useIssueModal } from "@/hooks/context/context"
 import { cn } from "@/lib/utils"
 
 import { SelectPriority } from "./select-priority"

@@ -10,6 +10,8 @@ export default function WorkspaceLayout({ children }: { children: ReactNode }) {
       <section className="flex h-14 w-full items-center justify-between px-4">
         <article className="flex h-full items-center justify-center gap-2">
           <Image
+            width={32}
+            height={32}
             src="/default-user.jpeg"
             alt="bla bla"
             className="mr-2 size-8 rounded-md object-cover object-center shadow-xl"
