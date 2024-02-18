@@ -14,14 +14,14 @@ export default function HomePage() {
         </div>
 
       <Header />
-      <main className="container mx-auto mt-32 grid flex-1 gap-4 lg:mt-52">
+      <main className="container mx-auto mt-32 grid flex-1 gap-4 lg:mt-64">
       <Badge variant="landing">
             v0.1 version 
           </Badge>
           <div className="relative flex w-full rounded-md md:items-center md:justify-center">
 
       <div className=" relative z-10  mx-auto w-full max-w-7xl p-4">
-        <h1 className="bg-gradient-to-t from-[#c7d2fe] to-primary bg-clip-text text-center text-4xl text-transparent lg:text-7xl">
+        <h1 className="z-20 bg-gradient-to-t from-sky-200 to-primary bg-clip-text text-center text-4xl text-transparent dark:from-[#fefefe] dark:to-primary lg:text-7xl">
         GitGud unique way to build <br/> your community
         </h1>
         <p className="mx-auto mt-4 max-w-lg text-center text-lg text-muted-foreground">
