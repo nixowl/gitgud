@@ -5,8 +5,8 @@ import { cn } from "@/lib/utils"
 
 import Modal from "../ui/modal"
 import { ChangeWorkspaceData } from "./change-workspace-data"
-import { DeleteWorkspaceModal } from "./delete-workspace-modal"
 import { ChangeWorkspaceImage } from "./change-workspace-image"
+import { DeleteWorkspaceModal } from "./delete-workspace-modal"
 
 type TabsType = "General" | "Picture" | "Delete"
 
@@ -45,7 +45,6 @@ export function SettingsModal({ isOpen, close }: ModalProps) {
       {activeTab === "General" && <ChangeWorkspaceData />}
       {activeTab === "Picture" && <ChangeWorkspaceImage />}
       {activeTab === "Delete" && <DeleteWorkspaceModal />}
-
     </Modal>
   )
 }

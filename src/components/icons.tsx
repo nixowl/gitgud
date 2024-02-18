@@ -1,13 +1,12 @@
 import { type HTMLAttributes } from "react"
 
-
-// WRONG 
+// WRONG
 /*
  strokeWidth="1.5"
         strokeLinecap="round"
         strokeLinejoin="round"
 */
-// RIGHT  
+// RIGHT
 /*
  strokeWidth="1.5"
  strokeLinecap="round"
@@ -190,13 +189,7 @@ export const Icons = {
         strokeLinecap="round"
         strokeLinejoin="round"
       />
-      <path
-        d="M12 17.99V14.99"
-        stroke="currentColor"
-        strokeWidth="1.5"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-      />
+      <path d="M12 17.99V14.99" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
     </svg>
   ),
   Image: ({ ...props }: HTMLAttributes<SVGElement>) => (
@@ -480,13 +473,7 @@ export const Icons = {
         strokeLinecap="round"
         strokeLinejoin="round"
       />
-      <path
-        d="M9.5 12.5H14.5"
-        stroke="currentColor"
-        strokeWidth="1.5"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-      />
+      <path d="M9.5 12.5H14.5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
     </svg>
   ),
   UserEdit: ({ ...props }: HTMLAttributes<SVGElement>) => (
@@ -525,20 +512,8 @@ export const Icons = {
   ),
   UserPlus: ({ ...props }: HTMLAttributes<SVGElement>) => (
     <svg {...props} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path
-        d="M18.5 19.5H14.5"
-        stroke="currentColor"
-        strokeWidth="1.5"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-      />
-      <path
-        d="M16.5 21.5V17.5"
-        stroke="currentColor"
-        strokeWidth="1.5"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-      />
+      <path d="M18.5 19.5H14.5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+      <path d="M16.5 21.5V17.5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
       <path
         d="M12.16 10.87C12.06 10.86 11.94 10.86 11.83 10.87C9.44997 10.79 7.55997 8.84 7.55997 6.44C7.54997 3.99 9.53997 2 11.99 2C14.44 2 16.43 3.99 16.43 6.44C16.43 8.84 14.53 10.79 12.16 10.87Z"
         stroke="currentColor"

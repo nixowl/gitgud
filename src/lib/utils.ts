@@ -9,4 +9,3 @@ export function cn(...inputs: ClassValue[]) {
 export const API = axios.create({
   baseURL: "http://152.53.12.218",
 })
-

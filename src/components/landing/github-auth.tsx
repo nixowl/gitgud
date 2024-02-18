@@ -6,7 +6,7 @@ import { useRouter, useSearchParams } from "next/navigation"
 export function GithubAuth() {
   const router = useRouter()
   const searchParams = useSearchParams()
- 
+
   useEffect(() => {
     if (searchParams.get("token")) {
       document.cookie = `auth-token=${searchParams.get("token")}; path=/`
