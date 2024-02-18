@@ -63,19 +63,29 @@ const config = {
           to: { height: "0" },
         },
         "background-shine": {
-            "from": {
-              "backgroundPosition": "0 0"
-            },
-            "to": {
-              "backgroundPosition": "-200% 0"
-            }
+          from: {
+            backgroundPosition: "0 0",
           },
+          to: {
+            backgroundPosition: "-200% 0",
+          },
+        },
+        "border-width": {
+          from: {
+            width: "40px",
+            opacity: "0",
+          },
+          to: {
+            width: "200px",
+            opacity: "1",
+          },
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
         "background-shine": "background-shine 2s linear infinite",
-
+        "border-width": "border-width 5s infinite alternate",
       },
     },
   },

@@ -11,7 +11,8 @@ const badgeVariants = cva(
         secondary: "border-transparent bg-secondary text-secondary-foreground hover:bg-secondary/80",
         destructive: "border-transparent bg-destructive text-destructive-foreground hover:bg-destructive/80",
         outline: "text-foreground",
-        landing: "mx-auto h-full w-fit animate-background-shine cursor-pointer rounded-full border border-border bg-[linear-gradient(110deg,#f9f9f980,45%,#4D4B4B10,55%,#f9f9f980)] bg-[length:250%_100%] px-5 py-1 text-sm font-medium text-muted-foreground dark:bg-[linear-gradient(110deg,#111621,45%,#4D4B4B20,55%,#111621)]"
+        landing:
+          "mx-auto h-full w-fit animate-background-shine cursor-pointer rounded-full border border-border bg-[linear-gradient(110deg,#f9f9f980,45%,#4D4B4B10,55%,#f9f9f980)] bg-[length:250%_100%] px-5 py-1 text-sm font-medium text-muted-foreground dark:bg-[linear-gradient(110deg,#111621,45%,#4D4B4B20,55%,#111621)]",
       },
     },
     defaultVariants: {
